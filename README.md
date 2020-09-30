@@ -1,2 +1,1 @@
-# FirstProject
-试用
+Hello,this is my first time to use github
