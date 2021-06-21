@@ -16,8 +16,8 @@ pipeline {
 
     stage('deliver') {
       steps {
-        bat './deliver.bat'
         input 'deliver Done'
+        bat './deliver.bat'
       }
     }
 
