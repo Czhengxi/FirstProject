@@ -16,7 +16,7 @@ pipeline {
 
     stage('deliver') {
       steps {
-        bat './deliver.abt'
+        bat './deliver.bat'
         input 'deliver Done'
       }
     }
