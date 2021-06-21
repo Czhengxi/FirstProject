@@ -1,20 +1,15 @@
 pipeline {
- agent any
- stages {
- stage('Build') {
- steps {
- println "Build"
- }
- }
- stage('Test') {
- steps {
- println "Test"
- }
- }
- stage('Deploy') {
- steps {
- println "Deploy"
- }
- }
- }
+    agent any 
+    stages {
+        stage('checkout') {
+            steps {
+                echo 'start checkout！' 
+            }
+        }
+        stage('build') {
+            steps {
+                echo 'start build！' 
+            }
+        }
+    }
 }
