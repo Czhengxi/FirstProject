@@ -1,18 +1,19 @@
 pipeline {
- agent any 
+ agent any
  stages {
- stage('Build') { 
+ stage('Build') {
  steps {
- println "Build" 
+ println "Build"
  }
  }
- stage('Test') { 
+ stage('Test') {
  steps {
- println "Test" 
+ println "Test"
  }
- } stage('Deploy') { 
+ }
+ stage('Deploy') {
  steps {
- println "Deploy" 
+ println "Deploy"
  }
  }
  }
