@@ -10,11 +10,11 @@ pipeline {
  steps {
  println "Test" 
  }
- } stage('Deploy') { 
+ }
+ stage('Deploy') { 
  steps {
  println "Deploy" 
  }
  }
  }
 }
-
