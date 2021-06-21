@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('Build') {
       steps {
-        git(url: 'git@github.com:Czhengxi/FirstProject.git', branch: 'dev')
+        git(url: 'https://gitee.com/chen-zhengxi/jenkins-work-space.git', branch: 'master')
         bat 'mvn clean package'
       }
     }
