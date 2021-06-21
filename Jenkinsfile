@@ -14,5 +14,12 @@ pipeline {
       }
     }
 
+    stage('deliver') {
+      steps {
+        bat './deliver.abt'
+        input 'deliver Done'
+      }
+    }
+
   }
 }
